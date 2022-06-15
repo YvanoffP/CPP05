@@ -38,7 +38,6 @@ int main (void)
 	{
 		std::cerr << e.what() << std::endl;
 	}
-    while (1);
 
 	return 0;
 }
