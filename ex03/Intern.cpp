@@ -31,16 +31,24 @@ Form *Intern::makeForm ( const std::string name, const std::string target ) cons
 	switch (i)
     {
 		case 0:
+        {
             std::cout << "Intern creates " << name << std::endl;
             return (new Presidential(target));
+        }
 		case 1:
+        {
             std::cout << "Intern creates " << name << std::endl;
             return (new Shrubbery(target));
+        }
 		case 2:
+        {
             std::cout << "Intern creates " << name << std::endl;
             return (new Robotomy(target));
+        }
 		default :
+        {
 			std::cerr << "This Form name doesn't exist. Choose between PresidentialForm, ShrubberyForm or RobotomyForm. Thanks." << std::endl;
-			return nullptr;
+			return NULL;
+        }
 	}
 }
