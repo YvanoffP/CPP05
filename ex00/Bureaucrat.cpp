@@ -55,9 +55,6 @@ Bureaucrat &Bureaucrat::operator = ( const Bureaucrat &right )
 	return (*this);
 }
 
-
-// NO Bureaucrat:: before operator : function is outside of class
-
 std::ostream &operator << ( std::ostream &out, const Bureaucrat &right )
 {
 	out << right.getName() << ", bureaucrat grade " << right.getGrade() << "." << std::endl;
