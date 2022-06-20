@@ -39,6 +39,7 @@ const char *Robotomy::BadOpenException::what() const throw()
 void Robotomy::execute( Bureaucrat const &executor ) const
 {
     std::cout << "BRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrr" << std::endl;
+	srand(time(NULL));
     if (rand() % 2)
         std::cout << getTarget() << " has been robotomised" << std::endl;
     else
